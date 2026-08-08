@@ -9,18 +9,12 @@ The project was built to explore how machine learning can be used to turn user-p
 [Try Career Pathfinder Pro](https://career-pathfinder-pro-3hezlf2usqtnqbheavsaux.streamlit.app/)
 
 ## What It Does
+The application collects information about a user's academic profile, technical abilities, interests, and other development-related attributes.
 
-The application collects information about a user's profile and uses a trained machine learning model to predict a suitable career category.
+A trained machine-learning model processes these inputs and generates a career-path prediction.
 
-Based on the prediction, the application provides a corresponding roadmap covering areas that the user can work on to develop the skills relevant to that career path.
+After the prediction, the application provides a strategic learning roadmap. Dedicated roadmap guidance is currently available for several career paths, while other predictions receive a general career-development roadmap.
 
-### Current Career Categories
-
-- AI / Machine Learning
-- Web Development
-- Data Science
-- Cybersecurity
-- Cloud Computing
 
 ## How It Works
 
@@ -32,7 +26,23 @@ The application follows a simple machine-learning workflow:
 4. The transformed data is passed to the trained machine-learning model.
 5. The model predicts a suitable career category.
 6. The application displays a learning roadmap related to the predicted career.
+### Machine Learning Pipeline
 
+```text
+User Profile
+     ↓
+Feature Preparation
+     ↓
+Pandas DataFrame
+     ↓
+Feature Scaling
+     ↓
+Trained ML Model
+     ↓
+Career Prediction
+     ↓
+Learning Roadmap
+```
 ## Input Areas
 
 The application currently considers profile information such as:
@@ -66,4 +76,5 @@ CAREER-PATHFINDER-PRO/
 ├── career_model.pkl
 ├── scaler.pkl
 ├── requirements.txt
-└── README.md
+└── README.md 
+```
